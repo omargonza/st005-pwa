@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#F5F2EC">
+    <meta name="description" content="Presentación del trabajo práctico ST-005 de soporte técnico informático.">
+    <title>ST-005 | Soporte técnico</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="assets/icons/icon-192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand__mark" aria-hidden="true">ST–005</span>
+        <div>
+          <p class="eyebrow">Expediente técnico</p>
+          <h1>Soporte técnico profesional</h1>
+        </div>
+      </div>
+      <span class="status"><span aria-hidden="true"></span> Caso documentado</span>
+    </header>
+
+    <main class="app-main" id="contenido-principal">
+      <section class="screen is-active" id="diagnostico" data-screen="diagnostico" aria-labelledby="titulo-diagnostico">
+        <div class="hero hero--diagnostico">
+          <div>
+            <p class="eyebrow eyebrow--light">ST-005 · 01 · Diagnóstico</p>
+            <h2 id="titulo-diagnostico">Diagnóstico del equipo</h2>
+            <p>Identificación técnica, evidencia fotográfica y propuesta correctiva del caso.</p>
+          </div>
+          <div class="hero__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H4zM8 20h8M12 16.5V20M8 9h8M8 12.5h5"/></svg>
+          </div>
+        </div>
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Equipo evaluado</p>
+            <h3>Configuración principal</h3>
+          </div>
+          <span class="pill">Plataforma DDR5</span>
+        </div>
+
+        <div class="spec-grid" aria-label="Componentes del equipo">
+          <article class="spec-card">
+            <span class="spec-card__icon" aria-hidden="true">CPU</span>
+            <div><p>Procesador</p><h4>AMD Ryzen 5 8500G</h4></div>
+          </article>
+          <article class="spec-card">
+            <span class="spec-card__icon" aria-hidden="true">MB</span>
+            <div><p>Motherboard</p><h4>MSI PRO A620M-E</h4></div>
+          </article>
+          <article class="spec-card">
+            <span class="spec-card__icon" aria-hidden="true">RAM</span>
+            <div><p>Memoria</p><h4>32 GB DDR5</h4></div>
+          </article>
+          <article class="spec-card">
+            <span class="spec-card__icon" aria-hidden="true">BOX</span>
+            <div><p>Gabinete</p><h4>Aconcawa</h4></div>
+          </article>
+          <article class="spec-card">
+            <span class="spec-card__icon" aria-hidden="true">SSD</span>
+            <div><p>Almacenamiento</p><h4>Kingston NV3 · 1 TB</h4></div>
+          </article>
+        </div>
+
+        <aside class="hardware-note">
+          <strong>Medidas exteriores del gabinete</strong>
+          <span>19 cm de ancho · 29 cm de profundidad · 38 cm de alto</span>
+          <p>Estas medidas exteriores no determinan por sí solas la altura interna disponible para un disipador.</p>
+        </aside>
+
+        <article class="case-card">
+          <div class="case-card__header">
+            <span class="case-card__number">01</span>
+            <div><p class="eyebrow">Escenario académico</p><h3>Síntomas del caso</h3></div>
+          </div>
+          <p>El práctico plantea un equipo con comportamiento térmico a corregir durante tareas exigentes. Los valores reales relevados se muestran por separado en la pantalla de temperaturas.</p>
+        </article>
+
+        <article class="case-card case-card--solution">
+          <div class="case-card__header">
+            <span class="case-card__number">02</span>
+            <div><p class="eyebrow">Intervención propuesta</p><h3>Diagnóstico correctivo</h3></div>
+          </div>
+          <p>Mejorar la disipación del procesador mediante un cooler compatible con AM5 y pasta térmica Arctic MX-4, y reemplazar el ventilador RGB defectuoso del gabinete.</p>
+        </article>
+
+        <section class="photo-evidence" aria-labelledby="titulo-evidencia">
+          <div class="section-heading section-heading--compact">
+            <div><p class="eyebrow">Evidencia del equipo</p><h3 id="titulo-evidencia">Gabinete Aconcawa</h3></div>
+            <span class="resource-status" data-resource-status-for="assets/images/gabinete-aconcawa.jpg">Pendiente</span>
+          </div>
+          <div class="featured-media" data-resource-src="assets/images/gabinete-aconcawa.jpg" data-resource-type="image">
+            <button class="featured-media__button" type="button" data-resource-action data-image-opener hidden>
+              <img data-src="assets/images/gabinete-aconcawa.jpg" alt="Fotografía del gabinete Aconcawa" loading="lazy">
+              <span>Ampliar fotografía</span>
+            </button>
+            <div class="resource-placeholder" data-resource-pending>
+              <div class="photo-placeholder__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 6.5h4l1.2-2h5.6l1.2 2h4v12H4z"/><circle cx="12" cy="12.5" r="3.2"/></svg>
+              </div>
+              <strong>Fotografía principal pendiente</strong>
+              <p>Copiar <code>gabinete-aconcawa.jpg</code> en <code>assets/images/</code>.</p>
+            </div>
+          </div>
+          <div class="photo-evidence__footer">
+            <p>Vista principal del equipo. Tocá la imagen para examinarla en detalle.</p>
+            <button class="button button--primary" type="button" data-open-expediente>
+              Ver expediente técnico <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <section class="screen" id="temperaturas" data-screen="temperaturas" aria-labelledby="titulo-temperaturas" hidden>
+        <div class="hero hero--temperaturas">
+          <div>
+            <p class="eyebrow eyebrow--light">ST-005 · 02 · Temperaturas</p>
+            <h2 id="titulo-temperaturas">Comportamiento térmico</h2>
+            <p>Lecturas máximas reales registradas en dos condiciones de trabajo.</p>
+          </div>
+          <div class="hero__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M14 14.8V5a3 3 0 0 0-6 0v9.8a5 5 0 1 0 6 0Z"/><path d="M11 8v8"/></svg>
+          </div>
+        </div>
+
+        <div class="reading-grid">
+          <article class="reading-card reading-card--low">
+            <div class="reading-card__top"><span>Baja carga</span><span class="real-badge">Registro real</span></div>
+            <strong>48,8 <small>°C</small></strong>
+            <div class="meter" role="img" aria-label="Temperatura máxima en baja carga: 48,8 grados Celsius">
+              <span style="--value: 48.8%"></span>
+            </div>
+            <p>Temperatura máxima de referencia.</p>
+          </article>
+
+          <article class="reading-card reading-card--stress">
+            <div class="reading-card__top"><span>Estrés SSE</span><span class="real-badge">Registro real</span></div>
+            <strong>78,1 <small>°C</small></strong>
+            <div class="meter" role="img" aria-label="Temperatura máxima durante estrés SSE: 78,1 grados Celsius">
+              <span style="--value: 78.1%"></span>
+            </div>
+            <p>Temperatura máxima durante la prueba.</p>
+          </article>
+        </div>
+
+        <article class="chart-card">
+          <div class="section-heading section-heading--compact">
+            <div><p class="eyebrow">Comparación</p><h3>Máximas registradas</h3></div>
+            <span class="chart-scale">Escala 0–100 °C</span>
+          </div>
+          <div class="bar-chart" aria-label="Gráfico comparativo de temperaturas máximas">
+            <div class="bar-chart__row">
+              <div class="bar-chart__label"><span>Baja carga</span><strong>48,8 °C</strong></div>
+              <div class="bar-chart__track"><span class="bar bar--low" style="--value: 48.8%"></span></div>
+            </div>
+            <div class="bar-chart__row">
+              <div class="bar-chart__label"><span>Estrés SSE</span><strong>78,1 °C</strong></div>
+              <div class="bar-chart__track"><span class="bar bar--stress" style="--value: 78.1%"></span></div>
+            </div>
+            <div class="bar-chart__axis" aria-hidden="true"><span>0</span><span>25</span><span>50</span><span>75</span><span>100 °C</span></div>
+          </div>
+        </article>
+
+        <aside class="info-note">
+          <span aria-hidden="true">i</span>
+          <div><strong>Lecturas reales y caso académico</strong><p>Los registros corresponden a un equipo que funcionaba normalmente. El sobrecalentamiento crítico es el escenario académico del caso ST-005.</p></div>
+        </aside>
+
+        <section class="sensor-summary" aria-labelledby="titulo-sensores">
+          <div class="section-heading section-heading--compact">
+            <div><p class="eyebrow">HWiNFO64</p><h3 id="titulo-sensores">Sensores destacados</h3></div>
+          </div>
+          <div class="sensor-grid">
+            <article><span>CPU</span><strong>100 %</strong><p>Utilización durante estrés SSE</p></article>
+            <article><span>Ventilador CPU</span><strong>2.076 RPM</strong><p>Máximo observado</p></article>
+            <article><span>Desaceleración térmica</span><strong>No detectada</strong><p>Durante la prueba registrada</p></article>
+          </div>
+        </section>
+
+        <section class="evidence-gallery" aria-labelledby="titulo-capturas">
+          <div class="section-heading section-heading--compact">
+            <div><p class="eyebrow">Evidencias</p><h3 id="titulo-capturas">Capturas de HWiNFO64</h3></div>
+          </div>
+          <div class="evidence-grid">
+            <article class="evidence-item" data-resource-src="assets/images/hwinfo-reposo.jpg" data-resource-type="image">
+              <button class="evidence-thumb" type="button" data-resource-action data-image-opener hidden>
+                <img data-src="assets/images/hwinfo-reposo.jpg" alt="Captura de HWiNFO64 durante baja carga" loading="lazy">
+                <span class="evidence-thumb__zoom">Ampliar</span>
+              </button>
+              <div class="resource-placeholder resource-placeholder--small" data-resource-pending>
+                <strong>Captura pendiente</strong><p><code>hwinfo-reposo.jpg</code></p>
+              </div>
+              <div class="evidence-item__body"><h4>Baja carga</h4><p>Referencia del máximo registrado: 48,8 °C.</p></div>
+            </article>
+            <article class="evidence-item" data-resource-src="assets/images/hwinfo-stress.jpg" data-resource-type="image">
+              <button class="evidence-thumb" type="button" data-resource-action data-image-opener hidden>
+                <img data-src="assets/images/hwinfo-stress.jpg" alt="Captura de HWiNFO64 durante estrés SSE" loading="lazy">
+                <span class="evidence-thumb__zoom">Ampliar</span>
+              </button>
+              <div class="resource-placeholder resource-placeholder--small" data-resource-pending>
+                <strong>Captura pendiente</strong><p><code>hwinfo-stress.jpg</code></p>
+              </div>
+              <div class="evidence-item__body"><h4>Estrés SSE</h4><p>CPU al 100 % y máximo registrado de 78,1 °C.</p></div>
+            </article>
+          </div>
+          <p class="gallery-help">Al ampliar una captura también podés abrirla en una pestaña para usar el zoom del navegador.</p>
+        </section>
+      </section>
+
+      <section class="screen" id="presupuesto" data-screen="presupuesto" aria-labelledby="titulo-presupuesto" hidden>
+        <div class="hero hero--presupuesto">
+          <div>
+            <p class="eyebrow eyebrow--light">ST-005 · 03 · Presupuesto</p>
+            <h2 id="titulo-presupuesto">Propuesta económica</h2>
+            <p>Reparación correctiva · ST-005</p>
+          </div>
+          <div class="hero__icon" aria-hidden="true">$</div>
+        </div>
+
+        <div class="budget-toolbar">
+          <div><p class="eyebrow">Detalle editable</p><h3>Componentes y servicio</h3></div>
+          <button class="button button--secondary" id="restaurar-presupuesto" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7v5h5M5.5 11a7 7 0 1 1 1.2 5.7"/></svg>
+            Restaurar
+          </button>
+        </div>
+
+        <div class="budget-table-wrap">
+          <table class="budget-table">
+            <thead><tr><th scope="col">Concepto</th><th scope="col">Cant.</th><th scope="col">Precio unitario</th><th scope="col">Importe</th></tr></thead>
+            <tbody id="lineas-presupuesto"></tbody>
+          </table>
+        </div>
+
+        <aside class="edit-hint"><span aria-hidden="true">✎</span> Los campos con borde pueden modificarse.</aside>
+        <p class="budget-message" id="mensaje-presupuesto" aria-live="polite"></p>
+
+        <section class="totals-card" aria-live="polite" aria-atomic="true">
+          <div><span>Subtotal</span><strong id="subtotal">$ 0,00</strong></div>
+          <div><span>IVA <small>21 %</small></span><strong id="iva">$ 0,00</strong></div>
+          <div class="totals-card__total"><span>Total</span><strong id="total">$ 0,00</strong></div>
+        </section>
+      </section>
+
+      <section class="screen" id="presentacion" data-screen="presentacion" aria-labelledby="titulo-presentacion" hidden>
+        <div class="hero hero--presentacion">
+          <div>
+            <p class="eyebrow eyebrow--light">ST-005 · 04 · Presentación</p>
+            <h2 id="titulo-presentacion">Síntesis del caso</h2>
+            <p>Tres ideas breves para explicar el caso, la intervención y su aporte.</p>
+          </div>
+          <div class="hero__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 4.5h16v11H4zM8 20l4-4.5 4 4.5M12 15.5V20"/><path d="m9 11 2-2 2 1 3-3"/></svg>
+          </div>
+        </div>
+
+        <div class="presentation-progress" aria-label="Progreso de la presentación">
+          <span class="is-active"></span><span></span><span></span>
+        </div>
+
+        <div class="slides" aria-live="polite">
+          <article class="slide is-active" data-slide="0">
+            <span class="slide__number">01</span>
+            <p class="eyebrow">Punto de partida</p>
+            <h3>El problema</h3>
+            <p>El caso académico plantea un equipo que necesita mejorar su comportamiento térmico durante tareas exigentes.</p>
+            <ul>
+              <li>Se identifica la configuración del equipo.</li>
+              <li>Se toman como referencia las mediciones reales.</li>
+              <li>Se define una intervención concreta.</li>
+            </ul>
+          </article>
+          <article class="slide" data-slide="1" hidden>
+            <span class="slide__number">02</span>
+            <p class="eyebrow">Intervención</p>
+            <h3>La solución</h3>
+            <p>La propuesta combina mantenimiento térmico y una mejora de la circulación de aire del gabinete.</p>
+            <ul>
+              <li>Instalar un cooler CPU compatible con AM5.</li>
+              <li>Aplicar pasta térmica Arctic MX-4.</li>
+              <li>Reemplazar el ventilador RGB defectuoso.</li>
+            </ul>
+          </article>
+          <article class="slide" data-slide="2" hidden>
+            <span class="slide__number">03</span>
+            <p class="eyebrow">Resultado esperado</p>
+            <h3>Los beneficios</h3>
+            <p>La intervención apunta a fortalecer la disipación y ordenar una solución técnica con costos transparentes.</p>
+            <ul>
+              <li>Mejor transferencia y evacuación del calor.</li>
+              <li>Mayor circulación de aire en el gabinete.</li>
+              <li>Presupuesto claro y ajustable.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="slide-controls">
+          <button class="button button--secondary" id="slide-anterior" type="button" disabled>
+            <span aria-hidden="true">←</span> Anterior
+          </button>
+          <span id="contador-slide">1 de 3</span>
+          <button class="button button--primary" id="slide-siguiente" type="button">
+            Siguiente <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="screen screen--expediente" id="expediente" data-screen="expediente" aria-labelledby="titulo-expediente" hidden>
+        <button class="back-button" type="button" data-close-expediente><span aria-hidden="true">←</span> Volver a Diagnóstico</button>
+        <div class="hero hero--expediente">
+          <div>
+            <p class="eyebrow eyebrow--light">Documentación de respaldo</p>
+            <h2 id="titulo-expediente">Expediente técnico <span class="nowrap">ST-005</span></h2>
+            <p>Fotografías, evidencias y documentos originales reunidos para la exposición.</p>
+          </div>
+          <div class="hero__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5 3.5h9l5 5v12H5zM14 3.5v5h5M8 13h8M8 16.5h6"/></svg>
+          </div>
+        </div>
+
+        <section class="dossier-section" aria-labelledby="exp-fotos">
+          <div class="section-heading"><div><p class="eyebrow">A · Fotografías</p><h3 id="exp-fotos">Equipo Aconcawa</h3></div></div>
+          <div class="evidence-grid">
+            <article class="evidence-item" data-resource-src="assets/images/gabinete-aconcawa.jpg" data-resource-type="image">
+              <button class="evidence-thumb" type="button" data-resource-action data-image-opener hidden><img data-src="assets/images/gabinete-aconcawa.jpg" alt="Vista exterior del gabinete Aconcawa" loading="lazy"><span class="evidence-thumb__zoom">Ampliar</span></button>
+              <div class="resource-placeholder resource-placeholder--small" data-resource-pending><strong>Fotografía pendiente</strong><p><code>gabinete-aconcawa.jpg</code></p></div>
+              <div class="evidence-item__body"><h4>Gabinete Aconcawa</h4><p>Vista exterior principal del equipo.</p></div>
+            </article>
+            <article class="evidence-item" data-resource-src="assets/images/gabinete-interior.jpg" data-resource-type="image">
+              <button class="evidence-thumb" type="button" data-resource-action data-image-opener hidden><img data-src="assets/images/gabinete-interior.jpg" alt="Vista interior y componentes del equipo" loading="lazy"><span class="evidence-thumb__zoom">Ampliar</span></button>
+              <div class="resource-placeholder resource-placeholder--small" data-resource-pending><strong>Fotografía pendiente</strong><p><code>gabinete-interior.jpg</code></p></div>
+              <div class="evidence-item__body"><h4>Vista de componentes</h4><p>Interior del gabinete y disposición del hardware.</p></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="dossier-section" aria-labelledby="exp-hwinfo">
+          <div class="section-heading"><div><p class="eyebrow">B · Evidencias</p><h3 id="exp-hwinfo">Registros HWiNFO64</h3></div></div>
+          <div class="evidence-grid">
+            <article class="evidence-item" data-resource-src="assets/images/hwinfo-reposo.jpg" data-resource-type="image">
+              <button class="evidence-thumb" type="button" data-resource-action data-image-opener hidden><img data-src="assets/images/hwinfo-reposo.jpg" alt="HWiNFO64 en baja carga" loading="lazy"><span class="evidence-thumb__zoom">Ampliar</span></button>
+              <div class="resource-placeholder resource-placeholder--small" data-resource-pending><strong>Captura pendiente</strong><p><code>hwinfo-reposo.jpg</code></p></div>
+              <div class="evidence-item__body"><h4>Baja carga</h4><p>Registro máximo de referencia: 48,8 °C.</p></div>
+            </article>
+            <article class="evidence-item" data-resource-src="assets/images/hwinfo-stress.jpg" data-resource-type="image">
+              <button class="evidence-thumb" type="button" data-resource-action data-image-opener hidden><img data-src="assets/images/hwinfo-stress.jpg" alt="HWiNFO64 durante estrés SSE" loading="lazy"><span class="evidence-thumb__zoom">Ampliar</span></button>
+              <div class="resource-placeholder resource-placeholder--small" data-resource-pending><strong>Captura pendiente</strong><p><code>hwinfo-stress.jpg</code></p></div>
+              <div class="evidence-item__body"><h4>Estrés SSE</h4><p>Registro máximo: 78,1 °C con CPU al 100 %.</p></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="dossier-section" aria-labelledby="exp-documentos">
+          <div class="section-heading"><div><p class="eyebrow">C–E · Archivos originales</p><h3 id="exp-documentos">Documentos del práctico</h3></div></div>
+          <div class="document-grid">
+            <article class="document-card" data-annex="Anexo 01 · PDF" data-resource-src="assets/docs/informe-st005.pdf?v=3847d3528d36" data-resource-type="document">
+              <span class="document-card__icon" aria-hidden="true">PDF</span><div><h4>Informe técnico</h4><p>Informe original del trabajo ST-005.</p><span class="resource-status" data-resource-label>Recurso pendiente</span></div>
+              <a class="button button--secondary" href="assets/docs/informe-st005.pdf?v=3847d3528d36" target="_blank" rel="noopener" data-resource-action hidden>Abrir</a>
+            </article>
+            <article class="document-card" data-annex="Anexo 02 · XLSX" data-resource-src="assets/docs/presupuesto-st005.xlsx?v=fe9a65663d2a" data-resource-type="document">
+              <span class="document-card__icon document-card__icon--xls" aria-hidden="true">XLSX</span><div><h4>Presupuesto original</h4><p>Planilla original del práctico.</p><span class="resource-status" data-resource-label>Recurso pendiente</span></div>
+              <a class="button button--secondary" href="assets/docs/presupuesto-st005.xlsx?v=fe9a65663d2a" download data-resource-action hidden>Descargar</a>
+            </article>
+            <article class="document-card" data-annex="Anexo 03 · PDF" data-resource-src="assets/docs/presentacion-st005.pdf?v=0a687d8a5c06" data-resource-type="document">
+              <span class="document-card__icon" aria-hidden="true">PDF</span><div><h4>Presentación</h4><p>Versión original de las tres diapositivas.</p><span class="resource-status" data-resource-label>Recurso pendiente</span></div>
+              <a class="button button--secondary" href="assets/docs/presentacion-st005.pdf?v=0a687d8a5c06" target="_blank" rel="noopener" data-resource-action hidden>Abrir</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="dossier-section" aria-labelledby="exp-presupuesto-html">
+          <div class="section-heading"><div><p class="eyebrow">Consulta offline</p><h3 id="exp-presupuesto-html">Resumen del presupuesto</h3></div><span class="pill">Vista HTML</span></div>
+          <div class="budget-summary">
+            <table>
+              <thead><tr><th>Concepto</th><th>Cant.</th><th>Precio</th></tr></thead>
+              <tbody>
+                <tr><td>Cooler CPU compatible con AM5</td><td>1</td><td>$ 50.200,00</td></tr>
+                <tr><td>Pasta térmica Arctic MX-4</td><td>1</td><td>$ 8.800,00</td></tr>
+                <tr><td>Ventilador RGB de gabinete</td><td>1</td><td>$ 11.876,00</td></tr>
+                <tr><td>Mano de obra técnica</td><td>1</td><td>$ 45.000,00</td></tr>
+              </tbody>
+            </table>
+            <div class="budget-summary__totals"><span>Subtotal: <strong>$ 115.876,00</strong></span><span>IVA 21 %: <strong>$ 24.333,96</strong></span><span>Total: <strong>$ 140.209,96</strong></span></div>
+          </div>
+        </section>
+
+        <button class="button button--primary dossier-back" type="button" data-close-expediente><span aria-hidden="true">←</span> Volver a Diagnóstico</button>
+      </section>
+    </main>
+
+    <dialog class="image-viewer" id="visor-imagen" aria-labelledby="visor-titulo">
+      <div class="image-viewer__header">
+        <div><p class="eyebrow">Evidencia ampliada</p><h2 id="visor-titulo">Imagen del expediente</h2></div>
+        <button class="image-viewer__close" type="button" data-close-viewer aria-label="Cerrar imagen">×</button>
+      </div>
+      <div class="image-viewer__canvas"><img alt="" id="visor-imagen-contenido"></div>
+      <div class="image-viewer__footer"><p>Desplazá o pellizcá la imagen para revisar sus detalles.</p><a class="button button--secondary" id="visor-enlace" href="" target="_blank" rel="noopener">Abrir en otra pestaña</a></div>
+    </dialog>
+
+    <nav class="bottom-nav" aria-label="Navegación principal">
+      <button class="nav-item is-active" type="button" data-target="diagnostico" aria-current="page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v11H4zM8 20h8M12 16.5V20"/></svg>
+        <span>Diagnóstico</span>
+      </button>
+      <button class="nav-item" type="button" data-target="temperaturas">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 14.8V5a3 3 0 0 0-6 0v9.8a5 5 0 1 0 6 0Z"/><path d="M11 8v8"/></svg>
+        <span>Temperaturas</span>
+      </button>
+      <button class="nav-item" type="button" data-target="presupuesto">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3.5h14v17l-3-2-4 2-4-2-3 2zM8 8h8M8 12h5"/></svg>
+        <span>Presupuesto</span>
+      </button>
+      <button class="nav-item" type="button" data-target="presentacion">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4.5h16v11H4zM8 20l4-4.5 4 4.5M12 15.5V20"/></svg>
+        <span>Presentación</span>
+      </button>
+    </nav>
+  </body>
+</html>
